@@ -15,7 +15,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #14213d;
+  background-color: #0b3948;
   padding: 50px;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -33,7 +33,7 @@ header span {
 }
 
 nav {
-  background-color: #fca311;
+  background-color: #416165;
   grid-column: 1/2;
   grid-row: 2/3;
 }
@@ -87,7 +87,7 @@ main h1 {
 
 .card1 h2,
 .card2 h2 {
-  background-color: #14213d;
+  background-color: #0b3948;
   color: white;
   padding: 5px;
 }
@@ -113,11 +113,71 @@ main a:hover {
 }
 
 footer {
-  background-color: #14213d;
+  background-color: #0b3948;
   color: white;
   text-align: center;
   margin-top: 10px;
   padding: 30px;
   grid-column: 1/2;
   grid-row: 4/5;
+}
+
+.hamburger {
+  font-size: 30px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+}
+
+nav.active ul {
+  display: flex;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+.dark-mode nav {
+  background-color: #2a2a2a;
+}
+
+.dark-mode a {
+  color: #bb86fc;
+}
+
+.dark-mode .card1,
+.dark-mode .card2 {
+  border-color: #444;
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode-btn {
+  background-color: #0b3948;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+  background-color: #416165;
 }

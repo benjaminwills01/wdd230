@@ -40,4 +40,11 @@
     grid-column: 2/3;
     grid-row: 2/3;
   }
+  .hamburger {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
 }
