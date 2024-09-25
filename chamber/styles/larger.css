@@ -1,0 +1,79 @@
+/* This CSS applies to screens with a width of 768px and above */
+@media screen and (min-width: 1200px) {
+  /* Header Section */
+  header {
+    grid-template-columns: auto 1fr auto; /* Ensures 3 columns: logo, nav, and hamburger */
+    height: 120px; /* Slightly taller header for larger screens */
+  }
+
+  nav ul {
+    display: flex; /* Show the navigation on larger screens */
+    flex-direction: row;
+    justify-content: center; /* Center the navigation items */
+    gap: 40px; /* Increase the space between navigation links */
+  }
+
+  nav a {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 400px; /* Increase the height of the hero section */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2-column layout for image and text */
+    align-items: center; /* Vertically align content */
+    padding: 20px;
+  }
+
+  .hero img {
+    grid-column: 2/3; /* Place the image on the right side */
+    height: auto;
+    max-height: 100%; /* Prevents the image from growing too large */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Larger heading */
+    grid-column: 1/2; /* Text on the left */
+  }
+
+  .cta-button {
+    font-size: 1.5rem; /* Increase button size */
+    padding: 10px 20px; /* Add more padding to the button */
+  }
+
+  /* Upcoming Events and Weather Section */
+  .events,
+  .weather {
+    height: auto; /* Remove fixed height for more flexibility */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for the content */
+    gap: 20px; /* Space between columns */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .events img,
+  .weather img {
+    max-width: 100%; /* Ensure images don't exceed their container size */
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+    font-size: 1rem; /* Slightly larger font in footer */
+  }
+
+  /* Additional Adjustments */
+  body {
+    font-size: 1.2rem; /* Larger base font size for readability */
+  }
+
+  .box3,
+  .box4,
+  .box5 {
+    display: flex;
+    justify-content: space-between; /* Ensure content in the boxes is spaced out */
+    padding: 20px;
+  }
+}
