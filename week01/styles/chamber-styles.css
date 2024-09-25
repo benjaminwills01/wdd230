@@ -11,15 +11,19 @@ body {
   padding: 20px;
 }
 
-h1,
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
-  color: #003366;
+  color: #0b3948;
 }
 
 header,
 footer {
-  background-color: #003366;
+  background-color: #0b3948;
   color: white;
   text-align: center;
   padding: 20px;
@@ -42,5 +46,5 @@ li {
 }
 
 strong {
-  color: #ffd700;
+  color: #416165;
 }
