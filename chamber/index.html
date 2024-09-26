@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKalk_Bay&psig=AOvVaw3z9ovE-5ErkcXR7Z_MWdVV&ust=1727356951442000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDhvp2Y3ogDFQAAAAAdAAAAABAE"
+      content="http://127.0.0.1:5500/chamber/images/heroimg.jpg"
     />
     <meta property="og:url" content="https://" />
     <link rel="stylesheet" href="styles/normalize.css" />
@@ -23,18 +23,11 @@
       media="screen and (min-width: 768px)"
       href="styles/larger.css"
     />
-    <link rel="icon" href="images/favicon.ico" />
   </head>
   <body>
     <header>
-      <img
-        class="logo"
-        src="images/chamberlogo.jpg"
-        alt="Chamber Logo"
-        width="75px"
-        height="75px"
-      />
-      <button id="hamburger">&#9776;</button>
+      <img class="logo" src="images/chamberlogo.jpg" alt="Chamber Logo" />
+      <button id="hamburger" aria-label="Toggle navigation">☰</button>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -55,41 +48,38 @@
         <h1 class="hero-subtitle">Grow Your Business with Us!</h1>
         <a href="#" class="cta-button">Join the Chamber</a>
       </section>
+      <div class="container">
+        <section class="events">
+          <img src="images/mainimg1.jpg" alt="Boats" />
+          <div class="events-content">
+            <h2>Upcoming Events</h2>
+            <p>Placeholder for events...</p>
+          </div>
+        </section>
 
-      <section class="events">
-        <img
-          src="images/mainimg1.jpg"
-          alt="Boats"
-          height="240px"
-          width="320px"
-        />
-        <div class="events-content">
-          <h2>Upcoming Events</h2>
-          <p>Placeholder for events...</p>
-        </div>
-      </section>
+        <section class="weather">
+          <img src="images/mainimg2.jpg" alt="View" />
+          <div class="weather-content">
+            <h2>Weather</h2>
+            <p>Placeholder for weather card...</p>
+          </div>
+        </section>
 
-      <section class="weather">
-        <img
-          src="images/mainimg2.jpg"
-          alt="View"
-          height="240px"
-          width="320px"
-        />
-        <div class="weather-content">
-          <h2>Weather</h2>
-          <p>Placeholder for weather card...</p>
-        </div>
-      </section>
-
-      <section class="spotlights">
-        <h2>Business Spotlights</h2>
-        <div class="spotlight1">Company 1 Info</div>
-        <div class="spotlight2">Company 2 Info</div>
-        <div class="spotlight3">Company 3 Info</div>
-      </section>
+        <section class="spotlights">
+          <h2>Business Spotlights</h2>
+          <div class="spotlight1">Company 1 Info</div>
+          <div class="spotlight2">Company 2 Info</div>
+          <div class="spotlight3">Company 3 Info</div>
+        </section>
+      </div>
     </main>
     <footer>
+      <p>
+        For more email
+        <a href="mailto:benjaminwills01@gmail.com"
+          >kalkbay1commerce@gmail.com</a
+        >
+      </p>
       <p>&copy; 2024 Benjamin Wills | WDD 230 Project</p>
       <p>Last Updated: <span id="lastModified"></span></p>
     </footer>

@@ -16,27 +16,26 @@ header {
   background-color: #416165;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: center;
   padding: 0 20px;
 }
 
 nav {
   grid-column: 2/3;
+  grid-row: 1/2;
   justify-self: center;
 }
-
-/*nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}*/
 
 nav ul {
   display: none;
   flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
   background-color: #416165;
+  padding: 10px 0;
   list-style-type: none;
-  padding: 0;
 }
 
 nav ul.show {
@@ -49,6 +48,10 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 #hamburger {
   grid-column: 3/4;
   background: none;
@@ -56,12 +59,17 @@ nav a {
   font-size: 24px;
   color: white;
   cursor: pointer;
+  position: relative;
+  z-index: 1000;
 }
 
 .logo {
   grid-column: 1/2;
   margin-right: 10px;
+  margin-top: 10px;
   border-radius: 50%;
+  position: relative;
+  z-index: 1000;
 }
 
 .hero {
@@ -82,20 +90,20 @@ nav a {
 }
 
 .hero-title {
-  top: 20px;
-  left: 20px;
+  top: 50px;
+  left: 30px;
   font-size: 2.5em;
 }
 
 .hero-subtitle {
-  bottom: 80px;
-  left: 20px;
+  bottom: 100px;
+  left: 30px;
   font-size: 2em;
 }
 
 .cta-button {
-  bottom: 20px;
-  left: 20px;
+  bottom: 50px;
+  left: 30px;
   padding: 10px 20px;
   background-color: #0b3948;
   text-decoration: none;
@@ -151,8 +159,7 @@ nav a {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: #0b3948;
-  color: white;
+  background-color: white;
   padding-top: 80px;
   padding-bottom: 80px;
   align-items: center;
