@@ -180,3 +180,31 @@
     border-radius: 5px;
   }
 }
+
+/* Discover */
+
+@media (min-width: 768px) {
+  .discover-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .photo-gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(90%);
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+}

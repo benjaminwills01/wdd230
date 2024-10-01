@@ -193,3 +193,105 @@ footer {
   text-align: center;
   padding-top: 25px;
 }
+
+/* Discover */
+
+.discover-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sidebar {
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#visit-message {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar h3 {
+  font-size: 1.4rem;
+  color: #0b3948;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.sidebar ul li:hover {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.gallery {
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.gallery figcaption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery h2 {
+  background-color: #0b3948;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.photo-gallery img:hover {
+  transform: none;
+  filter: none;
+}
