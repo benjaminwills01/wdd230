@@ -26,3 +26,9 @@ darkModeToggle.addEventListener("click", () => {
     darkModeToggle.textContent = "🌙 Dark Mode";
   }
 });
+
+const visitCount = localStorage.getItem("visitCount");
+let count = visitCount ? parseInt(visitCount) + 1 : 1;
+localStorage.setItem("visitCount", count);
+
+document.querySelector(".card2").innerHTML += `<p>Page Visits: ${count}</p>`;

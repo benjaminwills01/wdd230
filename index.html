@@ -22,13 +22,13 @@
       property="og:title"
       content="https://benjaminwills01.github.io/wdd230/index.html"
     />
-    <link rel="stylesheet" href="styles/custom-normalize.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="week01/styles/base.css" />
+    <link rel="stylesheet" href="home/styles/custom-normalize.css" />
+    <link rel="stylesheet" href="home/styles/normalize.css" />
+    <link rel="stylesheet" href="home/styles/base.css" />
     <link
       rel="stylesheet"
       media="screen and (min-width: 768px)"
-      href="week01/styles/larger.css"
+      href="home/styles/larger.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,12 +36,19 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
     />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="chamber/images/favicon.ico" />
   </head>
+
   <body>
     <header>
-      <img src="week01/images/me.jpg" alt="me" width="75" height="100" />
-      <span>Benjamin Wills</span>
+      <img
+        class="header-img"
+        src="home/images/me.jpg"
+        alt="me"
+        width="75"
+        height="100"
+      />
+      <span class="heading">Benjamin Wills</span>
       <button id="hamburger" class="hamburger">☰</button>
       <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
     </header>
@@ -53,31 +60,83 @@
         <li><a href="#">Form</a></li>
       </ul>
     </nav>
+
     <main>
+      <div class="image-container">
+        <picture>
+          <source
+            srcset="home/images/hero-small.webp"
+            type="image/webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="home/images/hero-small.jpg"
+            type="image/jpeg"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="home/images/hero-large.webp"
+            type="image/webp"
+            media="(min-width: 401px) and (max-width: 960px)"
+          />
+          <source
+            srcset="home/images/hero-large.jpg"
+            type="image/jpeg"
+            media="(min-width: 401px) and (max-width: 960px)"
+          />
+          <img src="home/images/hero-large.webp" alt="London England Temple" />
+        </picture>
+        <div class="overlay">London England Temple</div>
+      </div>
+
       <h1>WDD 230: Web Frontend Development</h1>
-      <section class="card1">
-        <h2>Learning Activities</h2>
-        <ul>
-          <li><a href="week02/design.html">Learning Activity 02 Design</a></li>
-          <li>
-            <a href="https://codepen.io/Benn-the-reactor/pen/GRVRzvQ"
-              >Learning Activity 02 CodePen</a
-            >
-          </li>
-          <li><a href="week02/bom.html">Learning Activity 02 DOM</a></li>
-          <li><a href="#">Learning Activity</a></li>
-          <li><a href="#">Learning Activity</a></li>
-        </ul>
-      </section>
-      <section class="card2">
-        <h2>Information</h2>
-        <p>Information will go here.</p>
+      <section class="cards">
+        <section class="card1">
+          <h2>Learning Activities</h2>
+          <ul>
+            <li>
+              Week 01:<a href="week01/holygrail.html">Grail</a> |
+              <a href="week01/media-query.html">Media Query</a>
+            </li>
+            <li>
+              Week 02:<a href="week02/design.html">Design</a> |
+              <a href="https://codepen.io/Benn-the-reactor/pen/eYqpazK">Menu</a>
+              |
+              <a href="week02/bom.html">BOM-25</a>
+            </li>
+            <li>
+              Week 03:<a href="week03/images/landscape.webp">WebP</a> |
+              <a href="week03/lazyload.html">Lazy</a> |
+              <a href="week03/responsive-images.html">srcset</a> |
+              <a href="week03/bom.html">localStorage</a>
+            </li>
+            <li>Week 04:<a href="#"></a></li>
+            <li>Week 05:<a href="#"></a></li>
+            <li>Week 06:<a href="#"></a></li>
+          </ul>
+        </section>
+
+        <section class="card2">
+          <h2>Information</h2>
+        </section>
+
+        <iframe
+          class="card3"
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d917891.6876275981!2d28.1273794!3d-26.0167199!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1727707478956!5m2!1sen!2sza"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
+
     <footer>
       <p>&copy; <span id="copyrightYear"></span> Benjamin Wills South Africa</p>
       <p id="lastModified"></p>
     </footer>
-    <script src="week01/scripts/getDates.js"></script>
+    <script src="home/scripts/getDates.js"></script>
   </body>
 </html>

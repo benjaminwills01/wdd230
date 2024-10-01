@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b3948;
+  padding: 50px;
+}
+
+.header-img {
+  border-radius: 3%;
+  margin-right: 50px;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.hamburger {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+.dark-mode nav {
+  background-color: #2a2a2a;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+.dark-mode .card1,
+.dark-mode .card2 {
+  border-color: #444;
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode-btn {
+  background-color: #0b3948;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.dark-mode-btn:hover {
+  background-color: #416165;
+}
+
+nav {
+  background-color: #416165;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+nav.active ul {
+  display: flex;
+}
+
+nav a.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+picture {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+  width: 95%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 95%;
+}
+
+.card1,
+.card2 {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.card3 {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.card1 h2,
+.card2 h2 {
+  background-color: #0b3948;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card1 ul,
+.card2 p {
+  margin: 10px;
+  padding: 10px;
+}
+
+.card1 li {
+  margin: 10px;
+}
+
+.card1 a {
+  margin: 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.card2 p {
+  text-align: center;
+}
+
+footer {
+  background-color: #0b3948;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
