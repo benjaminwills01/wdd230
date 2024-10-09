@@ -181,7 +181,7 @@
   }
 }
 
-/* Discover */
+/* DISCOVER PAGE */
 
 @media (min-width: 768px) {
   .discover-container {
@@ -206,5 +206,31 @@
 
   .gallery img:hover {
     transform: scale(1.05);
+  }
+}
+
+/* JOIN PAGE */
+
+@media (min-width: 768px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  form {
+    grid-column: 1/2;
+  }
+
+  .membership-benefits {
+    grid-column: 2/3;
+    align-self: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-container {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
   }
 }

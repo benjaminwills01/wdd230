@@ -35,3 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   localStorage.setItem("lastVisit", currentVisit);
 });
+
+/* Join */
+
+document.getElementById("timestamp").value = new Date().toISOString();

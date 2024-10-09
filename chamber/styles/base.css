@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -192,9 +193,10 @@ footer {
   color: white;
   text-align: center;
   padding-top: 25px;
+  margin-top: auto;
 }
 
-/* Discover */
+/* DISCOVER PAGE */
 
 .discover-container {
   display: grid;
@@ -277,6 +279,7 @@ footer {
   margin-bottom: 10px;
   text-align: center;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .photo-gallery {
@@ -294,4 +297,153 @@ footer {
 .photo-gallery img:hover {
   transform: none;
   filter: none;
+}
+
+/* JOIN PAGE */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+  color: #003366;
+  margin-top: 25px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #0b3948;
+}
+
+button[type="submit"] {
+  background-color: #0b3948;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #416165;
+}
+
+.membership-benefits {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.membership-benefits h2 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.membership-benefits p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.membership-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.membership-option {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.membership-option h3 {
+  font-size: 1.8rem;
+  color: #0b3948;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.membership-option ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.membership-option ul li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* THANK YOU PAGE */
+
+.thankyou-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  margin: 100px auto;
+}
+
+.thankyou-container h1 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.thankyou-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.ty-cta-button {
+  padding: 15px 30px;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ty-cta-button:hover {
+  background-color: #002244;
 }

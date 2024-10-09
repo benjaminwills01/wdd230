@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Kalk Bay Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Join our Chamber of Commerce to grow your business and engage with the community."
+    />
+    <meta name="author" content="Benjamin Wills" />
+    <meta property="og:title" content="The Kalk Bay Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="http://127.0.0.1:5500/chamber/images/heroimg.jpg"
+    />
+    <meta property="og:url" content="https://" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px)"
+      href="styles/larger.css"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/chamberlogo.jpg" alt="Chamber Logo" />
+      <button id="hamburger" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="#">Directory</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <form action="thankyou.html" method="get">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+
+          <label for="title">Title/Position:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            pattern="[A-Za-z\s\-]{7,}"
+            title="Must be at least 7 characters and contain only letters, spaces, or hyphens."
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="someone@domain.com"
+            required
+          />
+
+          <label for="phone">Mobile Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="business-name">Business/Organization Name:</label>
+          <input type="text" id="business-name" name="business-name" required />
+
+          <label for="membership-level">Membership Level:</label>
+          <select id="membership-level" name="membership" required>
+            <option value="" disabled selected>Select your membership</option>
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+          </select>
+
+          <label for="description">Business/Organization Description:</label>
+          <textarea id="description" name="description" rows="4"></textarea>
+
+          <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+          <button type="submit">Confirm Application</button>
+        </form>
+
+        <section class="membership-benefits">
+          <h2>Membership Benefits</h2>
+          <p>
+            Join the Kalk Bay Chamber of Commerce and unlock exclusive benefits
+            designed to support and grow your business. We offer tiered
+            memberships to cater to different needs. Explore the options below:
+          </p>
+
+          <div class="membership-options">
+            <div class="membership-option">
+              <h3>Basic Membership</h3>
+              <p class="price">$100/year</p>
+              <ul>
+                <li>Listing in the Chamber's Online Directory</li>
+                <li>Access to Networking Events</li>
+                <li>Newsletter Subscription</li>
+                <li>Business Promotion through Social Media</li>
+              </ul>
+            </div>
+
+            <div class="membership-option">
+              <h3>Premium Membership</h3>
+              <p class="price">$250/year</p>
+              <ul>
+                <li>All Basic Membership Benefits</li>
+                <li>Featured Listing in the Directory</li>
+                <li>Discounted Event Fees</li>
+                <li>Free Access to Workshops and Webinars</li>
+                <li>Priority Sponsorship Opportunities</li>
+              </ul>
+            </div>
+
+            <div class="membership-option">
+              <h3>Corporate Membership</h3>
+              <p class="price">$500/year</p>
+              <ul>
+                <li>All Premium Membership Benefits</li>
+                <li>Corporate Logo Displayed at Events</li>
+                <li>Personalized Business Consultation</li>
+                <li>Exclusive Access to VIP Networking Events</li>
+                <li>Free Event Sponsorship</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        For more email
+        <a href="mailto:benjaminwills01@gmail.com"
+          >kalkbay1commerce@gmail.com</a
+        >
+      </p>
+      <p>&copy; 2024 Benjamin Wills | WDD 230 Project</p>
+      <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
