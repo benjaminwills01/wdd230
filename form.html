@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamin Wills - WDD 230 - Form</title>
+    <meta name="description" content="WDD 230 - Form" />
+    <meta name="author" content="Benjamin Wills" />
+    <meta
+      property="og:title"
+      content="Benjamin Wills - WDD 230 - Web Frontend Development"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="home/styles/custom-normalize.css" />
+    <link rel="stylesheet" href="home/styles/normalize.css" />
+    <link rel="stylesheet" href="week04/styles/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+    />
+    <link rel="icon" href="chamber/images/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="header-img"
+        src="home/images/me.jpg"
+        alt="me"
+        width="75"
+        height="100"
+      />
+      <span class="heading">Benjamin Wills</span>
+      <button id="hamburger" class="hamburger">☰</button>
+      <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+    </header>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
+        <li><a href="#">Site Plan</a></li>
+        <li><a class="active" href="form.html">Form</a></li>
+      </ul>
+    </nav>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <main>
+      <h1>Registration Form</h1>
+      <form action="record.html" method="get" class="form">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label
+            >Username*
+            <input type="text" id="username" name="username" required
+          /></label>
+
+          <label
+            >Password*
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              pattern="[a-zA-Z0-9]{8,}"
+              title="Password must be at least 8 characters long and alphanumeric"
+          /></label>
+
+          <label
+            >Confirm Password*
+            <input
+              type="password"
+              id="confirmpassword"
+              name="confirmpassword"
+              required
+              title="Must match the first Password"
+          /></label>
+
+          <label
+            >Email*
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+              title="Please enter a valid @byui.edu email address."
+          /></label>
+
+          <label for="rating">Page Rating</label>
+          <div class="rating-container">
+            <input
+              type="range"
+              id="rating"
+              name="rating"
+              min="1"
+              max="10"
+              step="1"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output id="ratingValue">5</output>
+          </div>
+
+          <input type="submit" value="Send my Form" />
+        </fieldset>
+      </form>
+    </main>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <footer>
+      <p>&copy; <span id="copyrightYear"></span> Benjamin Wills South Africa</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="home/scripts/getDates.js"></script>
+    <script src="week04/scripts/formValidation.js"></script>
+  </body>
+</html>
