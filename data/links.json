@@ -1,0 +1,106 @@
+{
+  "weeks": [
+    {
+      "week": "Week 01",
+      "links": [
+        {
+          "url": "week01/holygrail.html",
+          "title": "Grail"
+        },
+        {
+          "url": "week01/media-query.html",
+          "title": "Media Query"
+        }
+      ]
+    },
+    {
+      "week": "Week 02",
+      "links": [
+        {
+          "url": "week02/design.html",
+          "title": "Design"
+        },
+        {
+          "url": "https://codepen.io/Benn-the-reactor/pen/eYqpazK",
+          "title": "Menu"
+        },
+        {
+          "url": "week02/bom.html",
+          "title": "BOM-25"
+        }
+      ]
+    },
+    {
+      "week": "Week 03",
+      "links": [
+        {
+          "url": "week03/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazy"
+        },
+        {
+          "url": "week03/responsive-images.html",
+          "title": "srcset"
+        },
+        {
+          "url": "week03/bom.html",
+          "title": "localStorage"
+        }
+      ]
+    },
+    {
+      "week": "Week 04",
+      "links": [
+        {
+          "url": "https://codepen.io/Benn-the-reactor/pen/bGXeXdM?editors=1100",
+          "title": "CSS Pseudo"
+        },
+        {
+          "url": "week04/images/csscombinators.PNG",
+          "title": "CSS Combinators"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Tables"
+        },
+        {
+          "url": "week04/form-start/Form-start/index.html",
+          "title": "Forms"
+        }
+      ]
+    },
+    {
+      "week": "Week 05",
+      "links": [
+        {
+          "url": "https://codepen.io/Benn-the-reactor/pen/XWvMRmv?editors=1100",
+          "title": "CSS Pseudo-elements"
+        },
+        {
+          "url": "week05/new-ward-members.json",
+          "title": "JSON"
+        },
+        {
+          "url": "week05/prophets.html",
+          "title": "The Fetch API"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "Weather API"
+        }
+      ]
+    },
+    {
+      "week": "Week 06",
+      "links": [
+        {
+          "url": "#",
+          "title": ""
+        }
+      ]
+    }
+  ]
+}
