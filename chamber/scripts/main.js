@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (daysDiff === 1) {
       visitMessage.textContent = "You last visited 1 day ago.";
     } else {
-      visitMessage.textContent = `You last visited ${daysDiff} days ago.`;
+      visitMessage.textContent = "You last visited ${daysDiff} days ago.";
     }
   }
 

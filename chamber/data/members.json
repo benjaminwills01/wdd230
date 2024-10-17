@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Seaside Café",
+      "address": "123 Ocean Avenue, Kalk Bay, 7975",
+      "phone": "021-555-1234",
+      "website": "http://seasidecafe.co.za",
+      "image": "images/seaside_cafe.jpg",
+      "membershipLevel": "Gold",
+      "description": "A cozy café with a stunning view of the ocean, serving fresh seafood and local dishes."
+    },
+    {
+      "name": "Kalk Bay Boutique",
+      "address": "45 Harbour Road, Kalk Bay, 7975",
+      "phone": "021-555-5678",
+      "website": "http://kalkbayboutique.co.za",
+      "image": "images/kalkbay_boutique.jpg",
+      "membershipLevel": "Silver",
+      "description": "An exclusive boutique offering a range of locally made clothing and accessories."
+    },
+    {
+      "name": "Harbour Tours",
+      "address": "88 Wharf Street, Kalk Bay, 7975",
+      "phone": "021-555-9876",
+      "website": "http://harbourtours.co.za",
+      "image": "images/harbour_tours.jpg",
+      "membershipLevel": "Platinum",
+      "description": "Guided boat tours around Kalk Bay’s scenic harbour and surrounding coastline."
+    },
+    {
+      "name": "Bay Art Gallery",
+      "address": "67 Beach Road, Kalk Bay, 7975",
+      "phone": "021-555-6543",
+      "website": "http://bayartgallery.co.za",
+      "image": "images/bay_art_gallery.jpg",
+      "membershipLevel": "Gold",
+      "description": "Featuring contemporary art from local artists, Bay Art Gallery is a hub for creative expression."
+    },
+    {
+      "name": "Wave Riders Surf School",
+      "address": "99 Surf Road, Kalk Bay, 7975",
+      "phone": "021-555-7410",
+      "website": "http://waveriders.co.za",
+      "image": "images/wave_riders.jpg",
+      "membershipLevel": "Silver",
+      "description": "Learn to surf with professional instructors at Kalk Bay’s famous surf spots."
+    },
+    {
+      "name": "The Lighthouse Hotel",
+      "address": "12 Lighthouse Lane, Kalk Bay, 7975",
+      "phone": "021-555-3210",
+      "website": "http://thelighthousehotel.co.za",
+      "image": "images/lighthouse_hotel.jpg",
+      "membershipLevel": "Platinum",
+      "description": "Luxury hotel offering panoramic views of the ocean and the mountains."
+    },
+    {
+      "name": "Kalk Bay Wellness Spa",
+      "address": "55 Spa Street, Kalk Bay, 7975",
+      "phone": "021-555-8520",
+      "website": "http://kalkbaywellness.co.za",
+      "image": "images/wellness_spa.jpg",
+      "membershipLevel": "Gold",
+      "description": "A wellness retreat offering holistic treatments and therapies for relaxation and rejuvenation."
+    }
+  ]
+}

@@ -234,3 +234,12 @@
     gap: 40px;
   }
 }
+
+/* DIRECTORY PAGE */
+
+@media (min-width: 768px) {
+  #directory-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -196,6 +196,11 @@ footer {
   margin-top: auto;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 /* DISCOVER PAGE */
 
 .discover-container {
@@ -446,4 +451,90 @@ button[type="submit"]:hover {
 
 .ty-cta-button:hover {
   background-color: #002244;
+}
+
+/* DIRECTORY PAGE */
+
+.toggle-buttons {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.toggle-buttons button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+  border: 0.1px solid black;
+}
+
+.toggle-buttons button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+#directory-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.grid-view .member-card {
+  flex: 1 1 calc(33% - 1rem);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.list-view {
+  display: block;
+}
+
+.list-view .member-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.list-view .member-card img {
+  margin-right: 1rem;
+  width: 100px;
+  height: auto;
+}
+
+#directory-container.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.member-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.member-card img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+#directory-container.list-view {
+  display: block;
+}
+
+.member-list-item {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
 }

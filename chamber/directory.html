@@ -38,42 +38,15 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="hero">
-        <h1 class="hero-title">The Kalk Bay Chamber of Commerce</h1>
-        <img
-          id="hero-img"
-          src="images/heroimg.jpg"
-          alt="Welcome to the Chamber of Commerce"
-        />
-        <h1 class="hero-subtitle">Grow Your Business with Us!</h1>
-        <a href="#" class="cta-button">Join the Chamber</a>
-      </section>
-      <div class="container">
-        <section class="events">
-          <img src="images/mainimg1.jpg" alt="Boats" />
-          <div class="events-content">
-            <h2>Upcoming Events</h2>
-            <p>Placeholder for events...</p>
-          </div>
-        </section>
-
-        <section class="weather">
-          <img src="images/mainimg2.jpg" alt="View" />
-          <div class="weather-content">
-            <h2>Weather</h2>
-            <p>Placeholder for weather card...</p>
-          </div>
-        </section>
-
-        <section class="spotlights">
-          <h2>Business Spotlights</h2>
-          <div class="spotlight1">Company 1 Info</div>
-          <div class="spotlight2">Company 2 Info</div>
-          <div class="spotlight3">Company 3 Info</div>
-        </section>
+      <div class="toggle-buttons">
+        <button id="grid-view">⏹️Grid</button>
+        <button id="list-view">📄List</button>
       </div>
+      <div id="directory-container" class="grid-view"></div>
     </main>
+
     <footer>
       <p>
         For more email
@@ -85,5 +58,6 @@
       <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js"></script>
   </body>
 </html>
