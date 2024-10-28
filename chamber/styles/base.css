@@ -150,40 +150,99 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+#current-temperature {
+  font-size: 28px;
+  font-weight: bold;
+  color: #003366;
+}
+
+#current-description {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+#forecast {
+  margin-top: 10px;
+}
+
+#forecast p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
 .events-content p,
 .weather-content p {
   margin-top: 0;
 }
 
-.spotlights {
-  height: 400px;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: white;
-  padding-top: 80px;
-  padding-bottom: 80px;
+.banner {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+.banner p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.banner button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.spotlights {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .spotlights h2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 20px;
 }
 
-.spotlight1 {
-  grid-column: 2/3;
-  grid-row: 2/3;
+.spotlights div {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.spotlight2 {
-  grid-column: 2/3;
-  grid-row: 3/4;
+.spotlights img {
+  max-width: 100px;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 
-.spotlight3 {
-  grid-column: 2/3;
-  grid-row: 4/5;
+.spotlights a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.spotlights a:hover {
+  background-color: #005599;
 }
 
 footer {
